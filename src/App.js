@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Comment from './components/comment';
+import Comment from './components/Comment';
+import Clock from './components/Clock'
 
 class App extends Component {
   render() {
@@ -22,7 +23,8 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        {<Comment author={comment.author} text={comment.text} date={comment.date}/>}
+        <Comment author={comment.author} text={comment.text} date={comment.date}/>
+        <Clock />
       </div>
     );
   }
