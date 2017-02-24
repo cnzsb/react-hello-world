@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Comment from './components/Comment';
 import Clock from './components/Clock'
+import Greeting from './components/Greeting'
 
 class App extends Component {
   render() {
@@ -25,6 +26,8 @@ class App extends Component {
         </p>
         <Comment author={comment.author} text={comment.text} date={comment.date}/>
         <Clock />
+        <Greeting isLoggedIn={false}/>
+
       </div>
     );
   }
