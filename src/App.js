@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Comment from './components/Comment';
-import Clock from './components/Clock'
-import Greeting from './components/Greeting'
+import Clock from './components/Clock';
+import Greeting from './components/Greeting';
 
 class App extends Component {
   render() {
@@ -15,6 +15,9 @@ class App extends Component {
         avatarUrl: 'http://placekitten.com/g/64/64'
       }
     };
+    const listItems = [1, 2, 3, 4].map((item, index) =>
+      <li key={index}>{item}</li>
+    );
     return (
       <div className="App">
         <div className="App-header">
@@ -27,7 +30,7 @@ class App extends Component {
         <Comment author={comment.author} text={comment.text} date={comment.date}/>
         <Clock />
         <Greeting isLoggedIn={false}/>
-
+        <ul>{listItems}</ul>
       </div>
     );
   }
