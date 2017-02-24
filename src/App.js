@@ -5,6 +5,7 @@ import Comment from './components/Comment';
 import Clock from './components/Clock';
 import Greeting from './components/Greeting';
 import Form from './components/Form';
+import Calculator from './components/Calculator'
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
         <Greeting isLoggedIn={false}/>
         <ul>{listItems}</ul>
         <Form />
+        <Calculator/>
         <br/>
         <br/>
         <br/>
