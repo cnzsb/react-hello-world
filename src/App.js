@@ -4,6 +4,7 @@ import './App.css';
 import Comment from './components/Comment';
 import Clock from './components/Clock';
 import Greeting from './components/Greeting';
+import Form from './components/Form';
 
 class App extends Component {
   render() {
@@ -31,6 +32,12 @@ class App extends Component {
         <Clock />
         <Greeting isLoggedIn={false}/>
         <ul>{listItems}</ul>
+        <Form />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
       </div>
     );
   }
